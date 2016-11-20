@@ -1,0 +1,1 @@
+This repository contains the server side of the application: Open this to host a server
