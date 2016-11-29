@@ -15,7 +15,6 @@ public class MultiThreadServer extends JFrame {
 	private ObjectOutputStream os;
 	private ObjectInputStream is;
 	public String username;
-	private boolean connected;
 	
 	// Socket is the connection between computers -> server and client
 	
@@ -25,12 +24,10 @@ public class MultiThreadServer extends JFrame {
 	private Socket clientSocket = null;
 	
 	// This chat server can accept up to maxClientsCount clients' connections.
-	private int maxClientsCount = 10;
+	private int maxClientsCount = 20;
 	private clientThread[] threads = new clientThread[maxClientsCount];
 	
 	private static int port = 6789;
-	
-	
 	
 	
 	public static void main(String args[]) {

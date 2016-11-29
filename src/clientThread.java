@@ -3,6 +3,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 /*
@@ -13,6 +14,8 @@ import javax.swing.JOptionPane;
  * other clients. The thread broadcast the incoming messages to all clients and
  * routes the private message to the particular client. When a client leaves the
  * chat room this thread informs also all the clients about that and terminates.
+ * 
+ * Implements all of the "general client" functions
  */
 public class clientThread extends Thread {
 	
@@ -90,7 +93,7 @@ public class clientThread extends Thread {
 					e.printStackTrace();
 				}
 				if(line.startsWith("/quit"))
-		    		break;
+					break;
 				
 		    	// If the message is private, send to given client
 				if(line.startsWith("@")) {
