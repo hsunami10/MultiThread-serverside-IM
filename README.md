@@ -1,1 +1,2 @@
 This repository contains the server side of the application: Download the server_executable.zip, unzip, and run the .exe file to start the server
+--If you're using a Mac, go to https://github.com/hsunami10/Windows-MacOSX repository, and download the .exe to .dmg converter
